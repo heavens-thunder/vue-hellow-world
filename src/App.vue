@@ -1,17 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <p>
+    <Hello visitorName="Satyam" />
+  </p>
+  <div class="row">
+    <div class="col-md-6">
+      <Hardik txt="Username" pwd="password" />
+    </div>
+    <div class="col-md-6">
+      <Hardik txt="Email" pwd="otp" />
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Hardik from "./components/Hardik.vue";
+import Hello from "./components/Hello.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Hardik,
+    Hello,
+  },
+};
 </script>
 
 <style>
